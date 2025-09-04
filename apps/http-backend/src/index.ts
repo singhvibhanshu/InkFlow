@@ -5,7 +5,9 @@ import { JWT_SECRET } from "./config";
 const app = express();
 
 app.post("/signup", (req, res) => {
-
+    res.json({
+        userID: "123"
+    })
 })
 
 app.post("/signin", (req, res) => {
@@ -19,6 +21,9 @@ app.post("/signin", (req, res) => {
 
 app.post("/room", middleware, (req, res) => {
     
+    res.json({
+        roomID: 123
+    })
 })
 
 app.listen(3000);
