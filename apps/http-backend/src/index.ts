@@ -17,7 +17,7 @@ app.post("/signin", (req, res) => {
     }, JWT_SECRET);
 })
 
-app.post("/room", (req, res) => {
+app.post("/room", middleware, (req, res) => {
     
 })
 
